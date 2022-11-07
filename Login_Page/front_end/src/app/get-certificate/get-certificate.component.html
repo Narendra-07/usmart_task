@@ -1,0 +1,12 @@
+
+	<button class="btn" (click)=" generatePDF()">Export To PDF</button>
+	<div id="content" #content>
+	  <table>
+		<p>Certificate of Completion</p>
+             <tr><td>This certificate is presented to</td></tr>   
+              <h5> Name: <strong>{{ currentUser.username }}</strong></h5> 
+			  <tr><td>Congratulations</td></tr> 
+               <tr><td>For successfully completing <br>
+				demo course</td></tr> 
+			</table>
+  

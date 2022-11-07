@@ -1,0 +1,16 @@
+<div class=course>Demo_Course</div>
+&nbsp;
+<div [innerHtml]="yt_iframe_html"></div>
+<input type="checkbox" [(ngModel)]="isAgreed">
+&nbsp;
+<div>&nbsp;</div>
+<div [innerHtml]="dm_iframe_html"></div>
+<input type="checkbox" [(ngModel)]="Agreed">
+<div>&nbsp;</div>
+<button class="btn" [disabled]="!isAgreed || !Agreed" type="button" (click)="onPress()">Get Certificate</button>
+
+<div id="comp-render" *ngIf="display">
+    <app-get-certificate></app-get-certificate>
+ </div>
+
+
